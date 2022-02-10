@@ -5,7 +5,8 @@
 
 ## Content
 - [Project Description](#project-description)
-- [Workflow](#workflow)
+- [Methodology](#Methodology)
+- [Models](#Models)
 - [Links](#links)
 
 ## Project Description
