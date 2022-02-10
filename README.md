@@ -21,14 +21,14 @@ The goal is to predict the Sephora website products rating based on its characte
 
 ## Models
 Supervised ML
-  Logistic regression 
-  KN neighbors Classifier
-  Random Forest Classifier
-  Extra Trees Classifier
+  - Logistic regression 
+  - KN neighbors Classifier
+  - Random Forest Classifier
+  - Extra Trees Classifier
 
 Unsupervised ML
- KMeans
- Agglomerative Clustering
+ - KMeans
+ - Agglomerative Clustering
 
 ## Links
 
