@@ -38,9 +38,12 @@ Unsupervised ML
 
 ## Links
 
-[Slides](https://github.com/)  
-[Data cleaning](https://)  
-[Data cleaning](https://) 
+[Slides](https://github.com/ouykhy/Products-rating-on-Sephora-website/blob/main/Sephora%20presentation.pptx)
+[Tableau dashboard](https://public.tableau.com/app/profile/ouykhy/viz/sephora_16444985608310/EDA?publish=yes)
+[Pandas profile report](https://github.com/ouykhy/Products-rating-on-Sephora-website/blob/main/sephora.html)  
+[Data cleaning](https://github.com/ouykhy/Products-rating-on-Sephora-website/blob/main/sephora_final.ipynb) 
+
+
 
 
 
