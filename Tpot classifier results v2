@@ -1,0 +1,61 @@
+model = TPOTClassifier(generations=2,mutation_rate=0.2, population_size=50, cv=5, scoring='accuracy', verbosity=3, n_jobs=-1)
+
+32 operators have been imported by TPOT.
+Optimization Progress:   0%|          | 0/150 [00:00<?, ?pipeline/s]
+_pre_test decorator: _random_mutation_operator: num_test=0 Unsupported set of arguments: The combination of penalty='l1' and loss='hinge' is not supported, Parameters: penalty='l1', loss='hinge', dual=True.
+
+Generation 1 - Current Pareto front scores:
+
+-1	0.7829408616796715	RandomForestClassifier(input_matrix, RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=gini, RandomForestClassifier__max_features=0.8, RandomForestClassifier__min_samples_leaf=8, RandomForestClassifier__min_samples_split=4, RandomForestClassifier__n_estimators=100)
+
+-2	0.7940456812298725	RandomForestClassifier(MinMaxScaler(input_matrix), RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=entropy, RandomForestClassifier__max_features=0.35000000000000003, RandomForestClassifier__min_samples_leaf=6, RandomForestClassifier__min_samples_split=17, RandomForestClassifier__n_estimators=100)
+_pre_test decorator: _random_mutation_operator: num_test=0 Solver lbfgs supports only dual=False, got dual=True.
+_pre_test decorator: _random_mutation_operator: num_test=1 DataFrame.dtypes for data must be int, float, bool or category.  When
+categorical type is supplied, DMatrix parameter `enable_categorical` must
+be set to `True`. Invalid columns:ingredients.
+Pipeline encountered that has previously been evaluated during the optimization process. Using the score from the previous evaluation.
+Pipeline encountered that has previously been evaluated during the optimization process. Using the score from the previous evaluation.
+
+Generation 2 - Current Pareto front scores:
+
+-1	0.7829408616796715	RandomForestClassifier(input_matrix, RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=gini, RandomForestClassifier__max_features=0.8, RandomForestClassifier__min_samples_leaf=8, RandomForestClassifier__min_samples_split=4, RandomForestClassifier__n_estimators=100)
+
+-2	0.7940456812298725	RandomForestClassifier(MinMaxScaler(input_matrix), RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=entropy, RandomForestClassifier__max_features=0.35000000000000003, RandomForestClassifier__min_samples_leaf=6, RandomForestClassifier__min_samples_split=17, RandomForestClassifier__n_estimators=100)
+TPOTClassifier(generations=2, mutation_rate=0.2, n_jobs=-1, population_size=50,
+               scoring='accuracy', verbosity=3)
+			   
+
+model2 = TPOTClassifier(generations=2,mutation_rate=0.9, population_size=50, cv=5, scoring='accuracy', verbosity=3, n_jobs=-1)
+
+32 operators have been imported by TPOT.
+Optimization Progress:   0%|          | 0/150 [00:00<?, ?pipeline/s]
+_pre_test decorator: _random_mutation_operator: num_test=0 Solver lbfgs supports only dual=False, got dual=True.
+_pre_test decorator: _random_mutation_operator: num_test=0 Unsupported set of arguments: The combination of penalty='l2' and loss='hinge' are not supported when dual=False, Parameters: penalty='l2', loss='hinge', dual=False.
+_pre_test decorator: _random_mutation_operator: num_test=1 Found array with 0 feature(s) (shape=(50, 0)) while a minimum of 1 is required..
+_pre_test decorator: _random_mutation_operator: num_test=0 DataFrame.dtypes for data must be int, float, bool or category.  When
+categorical type is supplied, DMatrix parameter `enable_categorical` must
+be set to `True`. Invalid columns:ingredients.
+_pre_test decorator: _random_mutation_operator: num_test=1 Solver lbfgs supports only 'l2' or 'none' penalties, got l1 penalty..
+_pre_test decorator: _random_mutation_operator: num_test=0 Solver lbfgs supports only 'l2' or 'none' penalties, got l1 penalty..
+Skipped pipeline #83 due to time out. Continuing to the next pipeline.
+
+Generation 1 - Current Pareto front scores:
+
+-1	0.7959357938196039	RandomForestClassifier(input_matrix, RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=entropy, RandomForestClassifier__max_features=0.25, RandomForestClassifier__min_samples_leaf=6, RandomForestClassifier__min_samples_split=2, RandomForestClassifier__n_estimators=100)
+_pre_test decorator: _random_mutation_operator: num_test=0 DataFrame.dtypes for data must be int, float, bool or category.  When
+categorical type is supplied, DMatrix parameter `enable_categorical` must
+be set to `True`. Invalid columns:ingredients.
+_pre_test decorator: _random_mutation_operator: num_test=0 DataFrame.dtypes for data must be int, float, bool or category.  When
+categorical type is supplied, DMatrix parameter `enable_categorical` must
+be set to `True`. Invalid columns:ingredients.
+_pre_test decorator: _random_mutation_operator: num_test=0 DataFrame.dtypes for data must be int, float, bool or category.  When
+categorical type is supplied, DMatrix parameter `enable_categorical` must
+be set to `True`. Invalid columns:ingredients.
+_pre_test decorator: _random_mutation_operator: num_test=0 Expected n_neighbors <= n_samples,  but n_samples = 50, n_neighbors = 56.
+_pre_test decorator: _random_mutation_operator: num_test=0 Solver lbfgs supports only 'l2' or 'none' penalties, got l1 penalty..
+
+Generation 2 - Current Pareto front scores:
+
+-1	0.7959357938196039	RandomForestClassifier(input_matrix, RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=entropy, RandomForestClassifier__max_features=0.25, RandomForestClassifier__min_samples_leaf=6, RandomForestClassifier__min_samples_split=2, RandomForestClassifier__n_estimators=100)
+
+-2	0.7967234667441505	XGBClassifier(RandomForestClassifier(input_matrix, RandomForestClassifier__bootstrap=False, RandomForestClassifier__criterion=gini, RandomForestClassifier__max_features=0.55, RandomForestClassifier__min_samples_leaf=9, RandomForestClassifier__min_samples_split=3, RandomForestClassifier__n_estimators=100), XGBClassifier__learning_rate=0.1, XGBClassifier__max_depth=8, XGBClassifier__min_child_weight=7, XGBClassifier__n_estimators=100, XGBClassifier__n_jobs=1, XGBClassifier__subsample=0.45, XGBClassifier__verbosity=0)
